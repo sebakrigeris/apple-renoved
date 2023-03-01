@@ -4,11 +4,6 @@
 
 }
 
-// @font-face {
-//     font-family: "font-texto";
-//     src: url();
-// }
-
 
 * {
     padding: 0;
@@ -17,10 +12,10 @@
     font-family: sans-serif;
 }
 
-
 // NAV PAGE
 
-.header {
+
+.header-index {
     width: 100%;
     height: 700px;
 
@@ -28,12 +23,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+
+
+header {
 
     nav {
     display: flex;
     justify-content: space-between;
 }
-
     .logo {
         margin-top: 15px;
         margin-left: 15px;
@@ -42,7 +40,6 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
     .nav-toggle {
         margin-top: -80px;
         background: none;
@@ -53,7 +50,6 @@
 
         display: none;
     }
-
     .nav-menu {
         list-style-type: none;
         display: flex;
@@ -75,7 +71,7 @@
 }
 
 
-// INDEX PAGE PARTE 1
+// INDEX PAGE PART 1
 
 .container-1 {
     display: flex;
@@ -109,7 +105,7 @@
 
 }
 
-// INDEX PAGE PARTE 2
+// INDEX PAGE PART 2
 
 .container-2 {
     width: 100%;
@@ -138,19 +134,57 @@
 
 }
 
+// INDEX PAGE PART 3
+
 .container-3 {
 
-    .video-texto {
-
-        position: absolute;
-        bottom: 0;        
-        color: white;
-
-        display: block;
-        justify-content: center;
-        align-items: center;
-
+    .video {
+        width: 100%;
     }
+
+}
+
+
+// corroborar 
+
+
+// .container-3 {
+
+//     .video-texto {
+
+//         position: absolute;
+//         bottom: 0;        
+//         color: white;
+
+//         display: block;
+//         justify-content: center;
+//         align-items: center;
+
+//     }
+// }
+
+
+// PAGE PRODUCTS
+
+.header-prod {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.portada-prod {
+    display: flex;
+    justify-content: space-around;
+
+
+    align-items: center;
+
+    h2 {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+
+
 }
 
 
@@ -158,7 +192,26 @@
 
 
 
-// PAGE UBICACIÓN
+
+
+
+
+
+
+
+
+
+// PAGE LOCATION
+
+.header-ubi {
+    width: 100%;
+    height: 700px;
+
+    background: url("../assets/background/backgroundtotal2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
 
 .body-ubi {
     width: 100%;
@@ -196,12 +249,66 @@
     height: 300px;
     border-radius: 1em;
     margin: 15px 0px 10px 18px;
+}
+
+
+// PAGE CONTACT
+
+.body-contact {
+    background-color: black;
 
 
 
 }
 
+.video-contact {
+    width: 100%;
+    position: relative;
+    z-index: -1;    
+}
 
+// form contact
+
+
+
+
+
+
+// Footer pages - index 
+
+
+.footer-apple {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(44, 55, 78), rgb(54, 57, 65));
+    margin-top: -8px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 0.7rem;
+    color: white;
+
+    .redsocial {
+    display: flex;
+    gap: 10px;
+    }
+
+    h5 {
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .contacto-apple {
+        display: flex;
+        gap: 10px;
+    }
+
+}
+
+.footer-pages {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin: 10px 25px 0px 25px;
+}
 
 
 
@@ -216,8 +323,11 @@
 
     // NAV BURGER 
 
-.header {
+.header-index {
     height: 300px;
+}
+
+header {
 
     .nav-toggle {
         display: block;
@@ -259,10 +369,9 @@
 
     .img-1 {
         width: 145px;
-        margin-top: 23.3px;
+        margin-top: 26px;
         margin-left: 1.2rem;
     }
-    
     .h1-1 {
         font-size: 29px;
     }
@@ -309,12 +418,40 @@
 
     video {
 
-
-        
         width: 100%;
     }
 }
 
+// PAGE PRODUCTS - 480px
+
+.header-prod {
+    height: 250px;
+}
+
+.portada-prod {
+
+
+    h2 {
+        width: 50%;
+        color: white;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+    img {
+        width: 192px;
+        margin-top: 29px;
+        margin-right: 12px;
+    }
+
+}
+
+.background-product {
+    width: 100%;
+    height: 100vw;
+    background: url("../Assets/background/backgroundtotal2.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 
 
@@ -340,4 +477,102 @@
 }
 
 
+
+// PAGE CONTACT 
+
+
+.container-form {
+    width: 80%;
+    background: url("../assets/background/backgroundtotal2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5em;
+
+    margin: auto;
+    margin-top: 50px;
+    padding: 1rem;
+    color: white;
+    
+    h2 {
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(255, 176, 6), rgb(219, 46, 133), rgb(219, 46, 133), rgb(255, 176, 6), rgb(255, 176, 6), rgb(219, 46, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        text-align: center;
+        margin: 20px;
+        font-size: 15px;
+        color: white;
+    }
+
+    input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    textarea {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        font-size: 17px;
+        border: none;
+        transition: 0.2s;        
+    }
+
+    button:hover {
+        background-color: #2908a2b3;
+        color: white;
+    }
+
+
+}
+
+
+// footer pages // footer index
+
+.footer-apple {
+    display: block;
+    
+    .redsocial {
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 40px;
+        }
+    }
+    .copyright {
+        margin-top: 7px;
+        text-align: center;
+        h5 {
+            font-size: 17px;
+        }   
+    }
+    .contacto-apple {
+        justify-content: center;
+        align-items: center;
+        img {
+        width: 40px;
+        }
+        .img-gmail {
+            width: 45px;
+        }
+
+    }
+
+
+
+
+
+
+}
+
+    
 }
