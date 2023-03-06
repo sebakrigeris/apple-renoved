@@ -26,7 +26,7 @@
 
 <nav class="nav-apple" id="nav">
 
-    <h2 class="logo"><img src="./assets/icon/nano-tecnologia.png" alt="" width="30px"> Apple Case SL</h2>
+    <h2 class="logo"><img src="./assets/icon/nano-tecnologia.png" alt="" width="50px"> Apple Case SL</h2>
 
     <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
 
@@ -36,7 +36,7 @@
         <li><a href="./pages/productos.html">Productos</a></li>
         <li><a href="./pages/ubicacion.html">Ubicación</a></li>
         <li><a href="./pages/contacto.html">Contacto</a></li>
-        <button class="button-carrito"><img src="/assets/icon/carrito1.png" alt="" width="30px"></button>
+        <button id="buy-apple" class="button-carrito"><img src="/assets/icon/carrito1.png" alt="" width="30px"><span id="cantidadCarrito" class="cantidad-carrito"></span></button>
 
     </ul>
 
@@ -44,13 +44,13 @@
 
 <div class="container-1">
     <div>
-        <img class="img-1" src="./assets/img/ImgPrimary.png" alt="Celulares y fundas para Iphone" width="320px">
+        <img class="img-1" src="./assets/img/ImgPrimary.png" alt="Celulares y fundas para Iphone" width="380px">
     </div>
 
     <div class="container-texto1">
         <h1 class="h1-1">El futuro es a toda pantalla.<br><span class="span-cuotas">12 cuotas fijas y envíos a todo el país. 
         </span><br><span class="span-logo">AppleCase SL</span></h1>
-        <button class="button-1 btn btn-outline-light" type="button"><a href=" ">Ver más</a></button>
+        <button class="button-1 btn btn-outline-light" type="button"><a href="./pages/productos.html">Ver más</a></button>
 
     </div>
 
@@ -63,10 +63,10 @@
 <section class="container-2">
     <div class="container-texto2">
         <h2 class="h2-2">Encuentra el iPhone perfecto para ti.<br><span class="span-logo2">AppleCase SL</span></h2>
-        <button type="button" class="button-2 btn btn-outline-light"><a href="">Ver más</a></button>
+        <button type="button" class="button-2 btn btn-outline-light"><a href="./pages/productos.html">Ver más</a></button>
     </div>
     <div>
-        <img class="img-2" src="./Assets/img/ImgSecond.png" alt="Mac escritorio" width="300px">
+        <img class="img-2" src="./Assets/img/ImgSecond.png" alt="Mac escritorio" width="750px">
     </div>
         
 </section>
@@ -84,14 +84,20 @@
         
 </section>
 
+<!--Carrito -->
+
+<div id="modal-container" class="modal-container"></div>
+
+
 </main>
+
 
 <footer class="footer-apple">
 
     <div class="redsocial">
-    <a  href="https://www.instagram.com/" target="_blank"><img src="../Assets/icon/instagram.png" alt="logo de Instagram" width="50"></a>
-    <a  href="https://www.facebook.com" target="_blank"><img src="../Assets/icon/facebook.png" alt="Logo de Facebook" width="50"></a>
-    <a  href="https://www.twitter.com" target="_blank"><img src="../Assets/icon/twitter.png" alt="logo de Twitter" width="50"></a>
+    <a  href="https://www.instagram.com/" target="_blank"><img src="../Assets/icon/instagram.png" alt="logo de Instagram" width="60"></a>
+    <a  href="https://www.facebook.com" target="_blank"><img src="../Assets/icon/facebook.png" alt="Logo de Facebook" width="60"></a>
+    <a  href="https://www.twitter.com" target="_blank"><img src="../Assets/icon/twitter.png" alt="logo de Twitter" width="60"></a>
     </div>
 
     <div class="copyright">
@@ -99,8 +105,8 @@
     </div>
 
 <div class="contacto-apple">
-    <img src="./assets/icon/whatsapp.png" alt="Logo de WhatsApp" width="50">
-    <img class="img-gmail" src="./assets/icon/gmail.png" alt="Logo de E-mail" width="55">
+    <img src="./assets/icon/whatsapp.png" alt="Logo de WhatsApp" width="60">
+    <img class="img-gmail" src="./assets/icon/gmail.png" alt="Logo de E-mail" width="65">
 
 </div>
 </footer>
@@ -110,8 +116,17 @@
         <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+    <!-- JS PRODUCTS -->
+<script src="./javascript/productos.js"></script>
+<script src="./javaScript/app.js"></script>
+<script src="./javaScript/buy.js"></script>
 <!-- JS NAV -->
+
+
 <script src="./javascript/nav.js"></script>
+
+
+
 
 </body>
 </html>
