@@ -157,6 +157,10 @@ header .nav-menu {
   align-items: center;
   margin-top: 4rem;
   margin-bottom: 4rem; }
+  .container-product .content-img {
+    transition: 0.3s; }
+  .container-product .content-img:hover {
+    background-color: black; }
   .container-product .card {
     width: 380px;
     background: url("../Assets/background/backgroundtotal2.png");
@@ -836,7 +840,8 @@ header .nav-menu {
     height: 350px;
     margin: 15px 0px 5px 40px; }
   .contain-contact {
-    display: block; }
+    display: block;
+    margin: 0; }
   .video-contact {
     width: 100%; }
   .container-form {

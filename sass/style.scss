@@ -196,7 +196,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 .header-prod {
@@ -236,6 +235,13 @@ header {
     align-items: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
+
+    .content-img {
+        transition: 0.3s;
+    }
+    .content-img:hover {
+        background-color: black;
+    }
 
     .card {
         width: 380px;
@@ -307,19 +313,15 @@ header {
     }
 
     img {
-        width: 150px;
-        
+        width: 150px;    
     }
 
-    .modal-header {
-        
+    .modal-header { 
         display: flex;
         justify-content: space-between;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         width: 100%;
-
-        
     }
     .modal-header-tittle {
         justify-self: start;
@@ -1447,6 +1449,7 @@ header {
 
 .contain-contact {
     display: block;
+    margin: 0;
 }
 
 .video-contact {
