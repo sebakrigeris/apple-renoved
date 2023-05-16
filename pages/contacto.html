@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Questrial&family=Roboto&display=swap" rel="stylesheet">
     <!-- Librería Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/127c9f45a4.js" crossorigin="anonymous"></script>
-
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- CSS3 -->
@@ -25,26 +26,27 @@
 
 </head>
 
-<body class="body-contact">
+<body class="background-contacto">
 
+    <!-- Nav - Contacto -->
     <header class="header-contact">
 
-        <nav class="nav-apple" id="nav">
-    
-            <h2 class="logo animate__animated animate__fadeInDown"><img src="../assets/icon/nano-tecnologia.png" alt="" width="50px"> Apple Case SL</h2>
-        
-            <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-        
-            <ul class="nav-menu">
-        
+        <div class="menu">
+            <button id="abrir-menu" class="abrir-menu"><img src="../assets/icon/menu.png" alt="" width="20px"></button>
+        </div>
+
+        <nav class="nav">
+            
+            <h2 class="logo"><img src="../assets/icon/nano-tecnologia.png" alt="" width="80px"> Apple Case SL</h2>
+            <ul class="ul-nav">
+                <button id="cerrar-menu" class="cerrar-menu"><img src="../assets/icon/x.png" alt=""></button>
+
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./ubicacion.html">Ubicación</a></li>
                 <li><a href="#">Contacto</a></li>
                 <button id="buy-apple" class="button-carrito"><img src="/assets/icon/carrito1.png" alt="" width="30px"><span id="cantidadCarrito" class="cantidad-carrito"></span></button>
-        
             </ul>
-        
         </nav>
     
     
@@ -52,27 +54,32 @@
 
     <main>
     
-<div class="contain-contact">
+        <!-- Contenedor Contacto -->
 
-    <video  class="video-contact" autoplay muted>
+<div class="contenedor-contacto">
+
+    <video  class="video-contacto" autoplay muted>
         <source src="../Assets/video/ipcontact.mp4" type="video/mp4">
     </video>
 
-    <div class="container-form">
+    <div class="contenedor-form mediaquery">
 
-    <form action="">
+    <form class="mediaquery">
 
         <h2>Apple Case SL</h2>
 
+        
         <p>
             <label for="nombre-completo">Nombre completo</label>
             <input class="input-5" type="text" name="nombre-completo">
         </p>
-
+    
+    
         <p>
             <label for="correo">Correo Electrónico</label>
             <input type="email" name="correo">
         </p>
+    
 
         <p>
             <label for="telefono">Teléfono</label>
@@ -125,8 +132,6 @@
 
 </div>
 </footer>
-
-
     
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

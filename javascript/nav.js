@@ -1,7 +1,11 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
+const ul = document.querySelector(".ul-nav");
+const abrirMenu = document.querySelector(".abrir-menu");
+const cerrarMenu = document.querySelector(".cerrar-menu");
 
+abrirMenu.addEventListener("click", () => {
+    ul.classList.add("visible");
+});
 
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-menu-visible");
+cerrarMenu.addEventListener("click", () => {
+    ul.classList.remove("visible");
 });

@@ -10,71 +10,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Prompt:wght@500&family=Questrial&family=Roboto&display=swap" rel="stylesheet">
     <!-- Librería Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/127c9f45a4.js" crossorigin="anonymous"></script>
-
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- CSS3 -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>AppleCase SL</title>
+    <title>AppleCase SL - Inicio</title>
+
 </head>
 
+    <!-- Nav - Index -->
 
-<header class="header-index">
+    <header class="header-index">
+        
+        <div class="menu">
+        <button id="abrir-menu" class="abrir-menu"><img src="./assets/icon/menu.png" alt="" width="20px"></button>
+        </div>
 
-<nav class="nav-apple" id="nav">
+        <nav class="nav">
+            <h2 class="logo"><img src="./assets/icon/nano-tecnologia.png" alt="" width="80px"> Apple Case SL</h2>
 
-    <h2 class="logo animate__animated animate__fadeInDown"><img src="./assets/icon/nano-tecnologia.png" alt="" width="50px"> Apple Case SL</h2>
+            <ul class="ul-nav">
+                <button id="cerrar-menu" class="cerrar-menu"><img src="./assets/icon/x.png" alt=""></button>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <button id="buy-apple" class="button-carrito"><img src="/assets/icon/carrito1.png" alt="" width="30px"><span id="cantidadCarrito" class="cantidad-carrito"></span></button>
+            </ul>
+        </nav>
 
-    <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+        <div class="portada-index">
+            <div class="img-portada"><img src="./assets/img/img-portada.png" alt="" width="500px"></div>
+            <div class="texto-portada">
+                <h1>El futuro es a toda pantalla.</h1>
+                <p>12 cuotas fijas y envíos a todo el país.</p>
+                <span>Apple Case SL</span>
+                <div>
+                <button type="button" class="button-2 btn btn-outline-light"><a href="./pages/productos.html">Ver más</a></button>
+                </div>
+            </div>
+        </div>
 
-    <ul class="nav-menu">
-
-        <li><a href="#">Inicio</a></li>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-        <button id="buy-apple" class="button-carrito"><img src="/assets/icon/carrito1.png" alt="" width="30px"><span id="cantidadCarrito" class="cantidad-carrito"></span></button>
-
-    </ul>
-
-</nav>
-
-<div class="container-1">
-    <div>
-        <img class="img-1 animate__animated animate__fadeInLeftBig" src="./assets/img/ImgPrimary.png" alt="Celulares y fundas para Iphone" width="380px">
-    </div>
-
-    <div class="container-texto1">
-        <h1 class="h1-1">El futuro es a toda pantalla.<br><span class="span-cuotas">12 cuotas fijas y envíos a todo el país. 
-        </span><br><span class="span-logo">AppleCase SL</span></h1>
-        <button class="button-1 btn btn-outline-light" type="button"><a href="./pages/productos.html">Ver más</a></button>
-
-    </div>
-
-</div>
-
-</header>
+    </header>
 
 <main>
 
-<section class="container-2">
-    <div class="container-texto2">
-        <h2 class="h2-2">Encuentra el iPhone perfecto para ti.<br><span class="span-logo2">AppleCase SL</span></h2>
-        <button type="button" class="button-2 btn btn-outline-light"><a href="./pages/productos.html">Ver más</a></button>
+    <!-- Contenedor 1 - Index -->
+
+<section class="container-1">
+
+    <div class="texto-container1">
+        <h2>Encuentra el iPhone perfecto para ti.
+        <br><span>AppleCase SL</span></h2>
+        <button type="button" class="btn btn-outline-light"><a href="./pages/productos.html">Ver más</a></button>
     </div>
     <div>
-        <img class="img-2" src="./Assets/img/ImgSecond.png" alt="Mac escritorio" width="750px">
+        <img class="img-container1" src="./Assets/img/ImgSecond.png" alt="Mac escritorio" width="750px">
     </div>
         
 </section>
 
-<section class="container-3">
+
+    <!-- Contenedor 2 - Index -->
+
+<section class="container-2">
 
         <video class="video" autoplay muted >
             <source src="./Assets/video/ip14.mp4" type="video/mp4">
