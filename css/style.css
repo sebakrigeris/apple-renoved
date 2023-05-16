@@ -1859,7 +1859,7 @@
       .contenedor-contacto .contenedor-form input {
         text-align: center; } }
 
-@media screen and (min-width: 320px) and (max-width: 400px) {
+@media screen and (min-width: 320px) and (max-width: 414px) {
   .header-index {
     min-height: 25vh; }
   .menu {
