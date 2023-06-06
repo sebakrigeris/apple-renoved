@@ -252,6 +252,7 @@
         width: 380px;
         background-image: linear-gradient( -109.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(12, 2, 22) 110.2%);
         color: white;
+        border: 1px solid #3d3e3e;
     }
 
     .content-h3 { 
@@ -379,8 +380,7 @@
 
 .background-ubicacion {
     width: 100%;
-    background: url("../assets/background/backgroundtotal2.png");
-    background-size: cover;
+    background-image: linear-gradient( -121.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(55, 10, 96) 100.2%);
 }
 
 .h2-ubicacion {
@@ -882,7 +882,7 @@
     // Página productos - 1650px
 
     .portada-productos {
-        margin-top: -5rem;
+        margin-top: 0;
         h2 {
             font-size: 4rem;
             padding: 0rem 0.3rem 0rem 0.7rem;
@@ -1121,7 +1121,7 @@
     // Página productos - 1430px
 
     .portada-productos {
-        margin-top: -5rem;
+        margin-top: 0;
         h2 {
             font-size: 3.5rem;
             padding: 0rem 0.3rem 0rem 0.7rem;
@@ -1362,7 +1362,7 @@
     // Página productos - 1250px
 
     .portada-productos {
-        margin-top: -3rem;
+        margin-top: 0;
         h2 {
             font-size: 3rem;
             padding: 0rem 0.3rem 0rem 0.7rem;
@@ -1651,7 +1651,7 @@
     // Página productos - 1024px
 
     .portada-productos {
-        margin-top: -6rem;
+        margin-top: 0;
         h2 {
             font-size: 2.5rem;
             padding: 0rem 0.3rem 0rem 0.7rem;
@@ -1940,9 +1940,10 @@
     }
 
 
-    // Página productos - 640px
+    // Página productos - 768px
 
     .portada-productos {
+        margin-top: 0;
         h2 {
             font-size: 2rem;
             padding: 0rem 0.3rem 0rem 0.7rem;
@@ -2156,6 +2157,7 @@
     // Portada Index 600px
 
     .portada-index {
+        margin-top: 0;
         gap: 0rem;
         img {
             width: 145px;
@@ -2232,14 +2234,14 @@
     // Página productos - 600px
 
     .portada-productos {
-        margin-top: -8rem;
+        margin-top: 0;
         h2 {
             font-size: 1.8rem;
             padding: 0rem 0.6rem;
             margin-top: 2rem;
         }
         img {
-            width: 40%;
+            width: 35%;
             margin-right: 0.5rem;
         }
     }
@@ -2520,6 +2522,7 @@
     // Página productos - 414px
     
     .portada-productos {
+        margin-top: 0;
         h2 {
             font-size: 1.4rem;
             padding: 0 1.2rem;
