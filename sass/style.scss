@@ -13,12 +13,10 @@
 // NAV - (INDEX)
 
 
-.header-index {
+.body-index {
     width: 100%;
     min-height: 100vh;
-    background: url("../assets/background/backgroundtotal2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient( -121.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(55, 10, 96) 100.2%);
     color: white;
 }
 
@@ -104,7 +102,6 @@
         text-align: center;
         h1 {
             font-size: 6.2rem;
-            // font-weight: 570;
             font-family: 'Roboto', sans-serif;       
         }
         p {
@@ -150,9 +147,7 @@
 .container-1 {
     width: 100%;
     min-height: 600px;
-    background: url("../assets/background/backgroundtotal.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient( 109.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(12, 2, 22) 110.2%);
     color: white;
 
     display: flex;
@@ -207,31 +202,29 @@
 
 .background-product {
     width: 100%;
-    background: url("../assets/background/backgroundtotal2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient( -121.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(55, 10, 96) 100.2%);
 }
 
 .header-productos {
     width: 100%;
-    min-height: 500px;
+    background-color: black;
+}
+
+
+.portada-productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: black;
 
-    .portada-productos {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-        h2 {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 600;
-            color: white;
-            font-size: 5rem;
-        }
-        img {
-            margin-top: 55px;
-        }
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 5rem;
+    }
+    img {
+        margin-top: 55px;
     }
 }
 
@@ -257,8 +250,7 @@
 
     .card {
         width: 380px;
-        background: url("../Assets/background/backgroundtotal2.png");
-        background-attachment: fixed;
+        background-image: linear-gradient( -109.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(12, 2, 22) 110.2%);
         color: white;
     }
 
@@ -293,8 +285,7 @@
     .comprar{
         border: none;
         color: white;
-        background: url("../Assets/background/backgroundtotal2.png");
-        background-size: cover;
+        background-image: linear-gradient( 109.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(12, 2, 22) 110.2%);
         padding: 5px;
         text-transform: uppercase;
         font-family: 'Questrial', sans-serif;
@@ -311,10 +302,9 @@
     max-height: 84vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background: url("../Assets/background/backgroundtotal2.png");
-    background-size: cover;
+    background-image: linear-gradient( 109.5deg, rgb(16, 41, 70) 5.8%,rgb(24, 24, 62) 50%, rgb(12, 2, 22) 110.2%);
     color: white;
     position: fixed;
     top: 16vh;
@@ -393,30 +383,21 @@
     background-size: cover;
 }
 
-.header-ubicacion {
-    width: 100%;
-    min-height: 470px;
-
-    background: url("../assets/background/backgroundtotal.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.h2-ubicacion {
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5.7rem;
     color: white;
 
-    .h2-header {
-        margin-top: 100px;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 5.7rem;
-    
-        span {
-            background: linear-gradient(to right, rgb(255, 176, 6), rgb(219, 46, 133), rgb(219, 46, 133), rgb(255, 176, 6), rgb(255, 176, 6), rgb(219, 46, 133));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: 'Questrial', sans-serif;
-            font-size: 4.5rem;
-            font-weight: 600;
-        }
+    span {
+        background: linear-gradient(to right, rgb(255, 176, 6), rgb(219, 46, 133), rgb(219, 46, 133), rgb(255, 176, 6), rgb(255, 176, 6), rgb(219, 46, 133));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Questrial', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 600;
     }
 }
 
@@ -537,7 +518,7 @@
                 transition: 0.5s;
             }
             button:hover {
-                background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );            color: white;
+                background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
                 outline: none;
                 color: white;
             }
@@ -584,26 +565,25 @@
 
 
 
-// MEDIA QUERYS - 1650px
 
-@media screen and (max-width: 1650px) {
+// MEDIA QUERYS - 1850px
 
-    .header-index {
-        min-height: 90vh;
-    }
+@media screen and (max-width: 1850px) {
+
+    
     .nav {
         padding: 1rem 3rem 0rem 2rem;
         .logo {
-            font-size: 2.8rem;
+            font-size: 3.2rem;
             img {
-                width: 70px;
+                width: 80px;
             }
         }
         .ul-nav {
             gap: 1.5rem;
             li {
                 a {
-                    font-size: 1.4rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -619,12 +599,12 @@
     } 
     
 
-    // Portada Index 1650px
+    // Portada Index 1850px
 
     .portada-index {
         gap: 0rem;
         img {
-            width: 410px;
+            width: 455px;
             margin-left: 0.5rem;
             padding-right: 1rem;
         }
@@ -632,40 +612,40 @@
             margin-top: 1rem;
             line-height: normal;
             h1 {
-                font-size: 4.4rem;
+                font-size: 4.7rem;
                 font-weight: 600;
                 letter-spacing: 2px;
                 font-family: 'Poppins', sans-serif;
                 padding: 0.5rem 0.5rem 0rem 1rem;
             }
             p {
-            font-size: 2.7rem;
+            font-size: 3rem;
             }
             span {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
             .button-2 {
                 margin-top: 0.5rem;
                 padding: 3px 35px;
-                font-size: 1.9rem;
+                font-size: 2rem;
             }
         }
     }
 
-    // Contenedor 1 - index 1500px
+    // Contenedor 1 - index 1850px
 
     .container-1 {
         min-height: 450px;
         .texto-container1 {
             margin-left: 1rem;
             h2 {
-                font-size: 3.4rem;
+                font-size: 3.6rem;
             }
             span {
-                font-size: 2.5rem;
+                font-size: 2.7rem;
             }
             button {
-                font-size: 1.7rem;
+                font-size: 1.9rem;
                 padding: 2px 13px;
             }
         }
@@ -675,39 +655,17 @@
         }
     }
 
-    // Footer 
+    // Página productos - 1850px
 
-    .footer-apple {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-
+    .portada-productos {
+        h2 {
+            font-size: 4.3rem;
+            padding: 0rem 0.3rem 0rem 0.7rem;
+        }
         img {
-            width: 60px;
-        }
-        .img-gmail {
-            width: 65px;
-        }
-        h5 {
-            font-size: 1.3rem;
-        }
-    }
-
-
-    // Página productos - 1500px
-
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 4.3rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 25%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+            width: 25%;
+            margin-top: 20px;
+            margin-right: 0.5rem;
         }
     }
 
@@ -730,15 +688,15 @@
             width: 120px;
         }
         .modal-header-tittle {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
         .modal-header-button {
             img {
-                width: 30px;
+                width: 40px;
             }
         }
         .modal-content {
-            flex-direction: column;
+            flex-direction: row;
             
             h4 {
                 font-size: 1rem;
@@ -755,21 +713,17 @@
         }
     }
 
-    // Página ubicación - 1500px
+    // Página ubicación - 1850px
 
-    .header-ubicacion {
-        min-height: 28vh;
-        .h2-header {
-            font-size: 3.7rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 2.5rem;
-            font-weight: 600;
-            padding: 1.5rem;
-            span {
-                font-size: 2.5rem;
-            }
+    .h2-ubicacion {
+        font-size: 4.7rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 2.5rem;
+        font-weight: 600;
+        padding: 1.5rem;
+        span {
+            font-size: 4rem;
         }
-        
     }
     .contenedor-ubicacion {
         
@@ -796,7 +750,7 @@
         }
     }
 
-    // Página Contacto - 1500px
+    // Página Contacto - 1850px
 
     .contenedor-contacto {
         flex-direction: row;
@@ -834,13 +788,11 @@
 }
 
 
-// MEDIA QUERYS - 1500px
+// MEDIA QUERYS - 1650px
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
 
-    .header-index {
-        min-height: 80vh;
-    }
+    
     .nav {
         padding: 1rem 3rem 0rem 2rem;
         .logo {
@@ -869,12 +821,12 @@
     } 
     
 
-    // Portada Index 1500px
+    // Portada Index 1650px
 
     .portada-index {
         gap: 0rem;
         img {
-            width: 350px;
+            width: 400px;
             margin-left: 0.5rem;
             padding-right: 1rem;
         }
@@ -902,7 +854,7 @@
         }
     }
 
-    // Contenedor 1 - index 1500px
+    // Contenedor 1 - index 1650px
 
     .container-1 {
         min-height: 430px;
@@ -925,39 +877,19 @@
         }
     }
 
-    // Footer 
 
-    .footer-apple {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
 
+    // Página productos - 1650px
+
+    .portada-productos {
+        margin-top: -5rem;
+        h2 {
+            font-size: 4rem;
+            padding: 0rem 0.3rem 0rem 0.7rem;
+        }
         img {
-            width: 50px;
-        }
-        .img-gmail {
-            width: 55px;
-        }
-        h5 {
-            font-size: 1.1rem;
-        }
-    }
-
-
-    // Página productos - 1500px
-
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 4rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 30%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+            width: 25%;
+            margin-right: 0.5rem;
         }
     }
 
@@ -980,15 +912,15 @@
             width: 120px;
         }
         .modal-header-tittle {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
         .modal-header-button {
             img {
-                width: 30px;
+                width: 35px;
             }
         }
         .modal-content {
-            flex-direction: column;
+            flex-direction: row;
             
             h4 {
                 font-size: 1rem;
@@ -1005,22 +937,19 @@
         }
     }
 
-    // Página ubicación - 1500px
+    // Página ubicación - 1650px
 
-    .header-ubicacion {
-        min-height: 28vh;
-        .h2-header {
+    .h2-ubicacion {
+        font-size: 4.5rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 2.5rem;
+        font-weight: 600;
+        padding: 1.5rem;
+        span {
             font-size: 3.5rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 2.5rem;
-            font-weight: 600;
-            padding: 1.5rem;
-            span {
-                font-size: 2.5rem;
-            }
         }
-        
     }
+
     .contenedor-ubicacion {
         
         .marco-ubicacion {
@@ -1046,7 +975,7 @@
         }
     }
 
-    // Página Contacto - 1500px
+    // Página Contacto - 1650px
 
     .contenedor-contacto {
         flex-direction: row;
@@ -1083,13 +1012,10 @@
 }
 
 
-// MEDIA QUERYS - 1357px
+// MEDIA QUERYS - 1430px
 
-@media screen and (max-width: 1357px) {
+@media screen and (max-width: 1430px) {
 
-    .header-index {
-        min-height: 80vh;
-    }
     .nav {
         padding: 1rem 3rem 0rem 2rem;
         .logo {
@@ -1118,7 +1044,7 @@
     } 
     
 
-    // Portada Index 1357px
+    // Portada Index 1430px
 
     .portada-index {
         gap: 0rem;
@@ -1151,7 +1077,7 @@
         }
     }
 
-    // Contenedor 1 - index 1357px
+    // Contenedor 1 - index 1430px
 
     .container-1 {
         min-height: 430px;
@@ -1177,8 +1103,7 @@
     // Footer 
 
     .footer-apple {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
         gap: 1rem;
 
         img {
@@ -1193,20 +1118,17 @@
     }
 
 
-    // Página productos - 1357px
+    // Página productos - 1430px
 
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 3.5rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 30%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+    .portada-productos {
+        margin-top: -5rem;
+        h2 {
+            font-size: 3.5rem;
+            padding: 0rem 0.3rem 0rem 0.7rem;
+        }
+        img {
+            width: 25%;
+            margin-right: 0.5rem;
         }
     }
 
@@ -1237,7 +1159,7 @@
             }
         }
         .modal-content {
-            flex-direction: column;
+            flex-direction: row;
             
             h4 {
                 font-size: 1rem;
@@ -1254,21 +1176,17 @@
         }
     }
 
-    // Página ubicación - 1357px
+    // Página ubicación - 1430px
 
-    .header-ubicacion {
-        min-height: 28vh;
-        .h2-header {
-            font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 2.5rem;
-            font-weight: 600;
-            padding: 0.5rem;
-            span {
-                font-size: 2.5rem;
-            }
+    .h2-ubicacion {
+        font-size: 4rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 2.5rem;
+        font-weight: 600;
+        padding: 0.5rem;
+        span {
+            font-size: 3.5rem;
         }
-        
     }
     .contenedor-ubicacion {
         
@@ -1295,7 +1213,7 @@
         }
     }
 
-    // Página Contacto - 1357px
+    // Página Contacto - 1430px
 
     .contenedor-contacto {
         flex-direction: column;
@@ -1337,10 +1255,6 @@
 
 @media screen and (max-width: 1250px) {
 
-    .header-index {
-        min-height: 25vh;
-    }
-
     .nav {
         padding: 1rem 3rem 0rem 2rem;
         .logo {
@@ -1372,11 +1286,12 @@
     // Portada Index 1250px
 
     .portada-index {
+        margin-top: 2rem;
         gap: 0rem;
         img {
             width: 260px;
             margin-top: -4.8rem;
-            margin-left: 0.5rem;
+            margin-left: 2.5rem;
             padding-right: 1rem;
         }
         .texto-portada {
@@ -1429,8 +1344,7 @@
     // Footer 
 
     .footer-apple {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
         gap: 1rem;
 
         img {
@@ -1447,18 +1361,16 @@
 
     // Página productos - 1250px
 
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 3rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 30%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+    .portada-productos {
+        margin-top: -3rem;
+        h2 {
+            font-size: 3rem;
+            padding: 0rem 0.3rem 0rem 0.7rem;
+        }
+        img {
+            width: 25%;
+            margin-top: 20px;
+            margin-right: 0.5rem;
         }
     }
 
@@ -1489,7 +1401,7 @@
             }
         }
         .modal-content {
-            flex-direction: column;
+            flex-direction: row;
             
             h4 {
                 font-size: 1rem;
@@ -1508,19 +1420,15 @@
 
     // Página ubicación - 1250px
 
-    .header-ubicacion {
-        min-height: 28vh;
-        .h2-header {
-            font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 2.5rem;
-            font-weight: 600;
-            padding: 0.5rem;
-            span {
-                font-size: 2.5rem;
-            }
+    .h2-ubicacion {
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 2.5rem;
+        font-weight: 600;
+        padding: 0.5rem;
+        span {
+            font-size: 2.5rem;
         }
-        
     }
     .contenedor-ubicacion {
         
@@ -1585,266 +1493,10 @@
 }
 
 
-// MEDIA QUERYS - 1150px
-
-@media screen and (max-width: 1150px) {
-
-    .header-index {
-        min-height: 25vh;
-    }
-
-    .nav {
-        padding: 1rem 3rem 0rem 2rem;
-        .logo {
-            font-size: 2.1rem;
-            img {
-                width: 50px;
-            }
-        }
-        .ul-nav {
-            gap: 1.5rem;
-            li {
-                a {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-        .button-carrito {
-            .cantidad-carrito {
-                width: 1.2rem;
-                height: 1.2rem;
-                right: 1.7rem;
-                top: 1rem;
-                font-size: 0.8rem;
-            }
-        }
-        
-    } 
-    
-
-    // Portada Index 1150px
-
-    .portada-index {
-        gap: 0rem;
-        img {
-            width: 250px;
-            margin-top: -4.8rem;
-            margin-left: 1.5rem;
-            padding-right: 1rem;
-        }
-        .texto-portada {
-            margin-top: 1rem;
-            line-height: normal;
-            h1 {
-                font-size: 3rem;
-                font-weight: 600;
-                letter-spacing: 2px;
-                font-family: 'Poppins', sans-serif;
-                padding: 0.5rem 0.5rem 0rem 1rem;
-            }
-            p {
-            font-size: 2.1rem;
-            }
-            span {
-                font-size: 2.2rem;
-            }
-            .button-2 {
-                margin-top: 0.5rem;
-                padding: 3px 35px;
-                font-size: 1.7rem;
-            }
-        }
-    }
-
-    // Contenedor 1 - index 1150px
-
-    .container-1 {
-        min-height: 350px;
-        .texto-container1 {
-            margin-left: 1rem;
-            h2 {
-                font-size: 2.33rem;
-            }
-            span {
-                font-size: 2.2rem;
-            }
-            button {
-                font-size: 1.5rem;
-                padding: 2px 10px;
-            }
-        }
-        
-        img {
-            width: 400px;
-        }
-    }
-
-    // Footer 
-
-    .footer-apple {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-
-        img {
-            width: 50px;
-        }
-        .img-gmail {
-            width: 55px;
-        }
-        h5 {
-            font-size: 1.1rem;
-        }
-    }
-
-
-    // Página productos - 1150px
-
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 3rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 30%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
-        }
-    }
-
-    .container-product {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        grid-template-columns: repeat(3, auto);
-
-        .card {
-            width: 280px;
-        }
-    }
-
-    .modal-container {
-        width: 90%;
-        margin: 0 5%;
-        top: 8vh;
-
-        img {
-            width: 120px;
-        }
-        .modal-header-tittle {
-            font-size: 1.5rem;
-        }
-        .modal-header-button {
-            img {
-                width: 30px;
-            }
-        }
-        .modal-content {
-            flex-direction: column;
-            
-            h4 {
-                font-size: 1rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-            span {
-                font-size: 1rem;
-            }
-        }
-        .total-content {
-            width: 80%;
-        }
-    }
-
-    // Página ubicación - 992px
-
-    .header-ubicacion {
-        min-height: 28vh;
-        .h2-header {
-            font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 2.5rem;
-            font-weight: 600;
-            padding: 0.5rem;
-            span {
-                font-size: 2.5rem;
-            }
-        }
-        
-    }
-    .contenedor-ubicacion {
-        
-        .marco-ubicacion {
-            width: 90%;
-            margin: 1rem 1.65rem;
-            margin-bottom: 0;
-            h2 {
-                font-size: 1.5rem;
-            }
-            ul {
-                li {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-        img {
-            width: 80%;
-
-        }
-        .iframe {
-            width: 100%;
-            height: 580px;
-        }
-    }
-
-    // Página Contacto - 992px
-
-    .contenedor-contacto {
-        flex-direction: column;
-
-        .video-contacto {
-            width: 100%;
-        }
-
-        .contenedor-form {
-            width: 80%;
-            margin: auto;
-
-            .mediaquery {
-                display: grid;
-                grid-template-columns: repeat(2,auto);
-                gap: 2rem;
-                }
-                
-            h2 {
-                grid-column: 1/3;
-                font-size: 3rem;
-            }
-            .bloque {
-                grid-column: 1/3;
-                margin-bottom: -2rem;
-            }
-            p {
-                font-size: 1.2rem;
-            }
-            input {
-                text-align: center;
-            }
-            }
-        }
-}
-
-
 // MEDIA QUERYS - 1024px
 
 @media screen and (max-width: 1024px) {
 
-    .header-index {
-        min-height: 25vh;
-    }
 
     // Nav - responsive - 1024px
 
@@ -1998,18 +1650,16 @@
 
     // Página productos - 1024px
 
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 2.5rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 30%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+    .portada-productos {
+        margin-top: -6rem;
+        h2 {
+            font-size: 2.5rem;
+            padding: 0rem 0.3rem 0rem 0.7rem;
+        }
+        img {
+            width: 30%;
+            margin-top: 20px;
+            margin-right: 0.5rem;
         }
     }
 
@@ -2040,16 +1690,16 @@
             }
         }
         .modal-content {
-            flex-direction: column;
+            flex-direction: row;
             
             h4 {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             p {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             span {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
         }
         .total-content {
@@ -2059,19 +1709,15 @@
 
     // Página ubicación - 1024px
 
-    .header-ubicacion {
-        min-height: 28vh;
-        .h2-header {
-            font-size: 2.5rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 2.5rem;
-            font-weight: 600;
-            padding: 0.3rem;
-            span {
-                font-size: 2.3rem;
-            }
+    .h2-ubicacion {
+        font-size: 2.5rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 2.5rem;
+        font-weight: 600;
+        padding: 0.3rem;
+        span {
+            font-size: 2.3rem;
         }
-        
     }
     .contenedor-ubicacion {
         
@@ -2143,9 +1789,6 @@
 
 @media screen and (max-width: 768px) {
 
-    .header-index {
-        min-height: 25vh;
-    }
 
     // Nav - responsive - 768px
 
@@ -2299,18 +1942,15 @@
 
     // Página productos - 640px
 
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 2rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 35%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+    .portada-productos {
+        h2 {
+            font-size: 2rem;
+            padding: 0rem 0.3rem 0rem 0.7rem;
+        }
+        img {
+            width: 35%;
+            margin-top: 20px;
+            margin-right: 0.5rem;
         }
     }
 
@@ -2360,19 +2000,16 @@
 
     // Página ubicación - 768px
 
-    .header-ubicacion {
-        min-height: 23vh;
-        .h2-header {
+
+    .h2-ubicacion {
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+        font-weight: 600;
+        padding: 0.3rem;
+        span {
             font-size: 2rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 20px;
-            font-weight: 600;
-            padding: 0.3rem;
-            span {
-                font-size: 2rem;
-            }
         }
-        
     }
     .contenedor-ubicacion {
         flex-direction: column;
@@ -2436,15 +2073,12 @@
 }
 
 
-// MEDIA QUERYS - 640px
+// MEDIA QUERYS - 600px
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
 
-    .header-index {
-        min-height: 25vh;
-    }
 
-    // Nav - responsive - 640px
+    // Nav - responsive - 600px
 
     .menu {
         display: flex;
@@ -2519,319 +2153,19 @@
         }
     }
 
-    // Portada Index 640px
+    // Portada Index 600px
 
     .portada-index {
         gap: 0rem;
         img {
-            width: 140px;
-            margin-top: -4.8rem;
-            margin-left: 0.7rem;
-        }
-        .texto-portada {
-            margin-top: 1rem;
-            line-height: 100%;
-            h1 {
-                font-size: 1.8rem;
-                font-weight: 600;
-                letter-spacing: 2px;
-                font-family: 'Poppins', sans-serif;
-                padding: 0.5rem;
-                margin-bottom: 1px;
-            }
-            p {
-            font-size: 1.33rem;
-            margin-bottom: 13px;
-            }
-            span {
-                font-size: 1.5rem;
-            }
-            .button-2 {
-                margin-top: 0.5rem;
-                padding: 3px 35px;
-                font-size: 1rem;
-            }
-        }
-    }
-
-    // Contenedor 1 - index 640px
-
-    .container-1 {
-        min-height: 160px;
-        .texto-container1 {
-            margin-left: 1rem;
-            h2 {
-                font-size: 1.3rem;
-            }
-            span {
-                font-size: 1.3rem;
-            }
-            button {
-                font-size: 1rem;
-                padding: 2px 10px;
-            }
-        }
-        
-        img {
-            width: 190px;
-        }
-    }
-
-    // Footer 
-
-    .footer-apple {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-
-        img {
-            width: 40px;
-        }
-        .img-gmail {
-            width: 45px;
-        }
-        h5 {
-            font-size: 1.1rem;
-        }
-    }
-
-
-    // Página productos - 640px
-
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 1.7rem;
-                padding: 0rem 0.3rem 0rem 0.7rem;
-            }
-            img {
-                width: 35%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
-        }
-    }
-
-    .container-product {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        grid-template-columns: repeat(1, auto);
-
-        .card {
-            width: 60%;
-            margin: auto;
-        }
-    }
-
-    .modal-container {
-        width: 90%;
-        margin: 0 5%;
-        top: 8vh;
-
-        img {
-            width: 120px;
-        }
-        .modal-header-tittle {
-            font-size: 1.5rem;
-        }
-        .modal-header-button {
-            img {
-                width: 30px;
-            }
-        }
-        .modal-content {
-            flex-direction: column;
-            
-            h4 {
-                font-size: 1rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-            span {
-                font-size: 1rem;
-            }
-        }
-        .total-content {
-            width: 80%;
-        }
-    }
-
-    // Página ubicación - 640px
-
-    .header-ubicacion {
-        min-height: 23vh;
-        .h2-header {
-            font-size: 1.81rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 20px;
-            font-weight: 600;
-            padding: 0.3rem;
-            span {
-                font-size: 1.7rem;
-            }
-        }
-        
-    }
-    .contenedor-ubicacion {
-        flex-direction: column;
-        
-        .marco-ubicacion {
-            width: 90%;
-            margin: 1rem auto;
-            margin-bottom: 0;
-            h2 {
-                font-size: 1.5rem;
-            }
-            ul {
-                li {
-                    font-size: 1rem;
-                }
-            }
-        }
-        img {
-            width: 70%;
-        }
-        .iframe {
-            width: 95%;
-            height: 300px;
-        }
-    }
-
-    // Página Contacto - 640px
-
-    .contenedor-contacto {
-        flex-direction: column;
-
-        .video-contacto {
-            width: 100%;
-        }
-
-        .contenedor-form {
-            width: 90%;
-            margin: auto;
-
-            .mediaquery {
-                display: grid;
-                grid-template-columns: repeat(2,auto);
-                gap: 2rem;
-                }
-            h2 {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-            .bloque {
-                grid-column: 1/3;
-                margin-bottom: -2rem;
-            }
-            input {
-                text-align: center;
-            }
-        }
-    }
-
-}
-
-
-// MEDIA QUERYS - 517px
-
-@media screen and (max-width: 517px) {
-
-    .header-index {
-        min-height: 25vh;
-    }
-
-    // Nav - responsive - 517px
-
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: end;
-        padding: 0.7rem 0.5rem 0rem 0rem;
-
-        button {
-            background: none;
-            border: none;
-        }
-        img {
-            width: 30px;
-        }
-    }
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-    }
-
-    .cerrar-menu {
-        background: none;
-        border: none;
-        img {
-            width: 30px;
-            transition: 0.4s;
-        }
-        img:hover {
-            transform: rotate(45deg);
-        }
-    }
-
-    .nav {
-        margin-top: -2rem;
-        padding: 0;
-        margin-left: 0.5rem;
-
-        .logo {
-            font-size: 1.6rem;
-            img {
-                width: 40px;
-            }
-        }
-
-        .ul-nav {
-            opacity: 0;
-            visibility: hidden;
-
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgb(14, 13, 21);
-            padding: 1rem;
-            box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
-
-            flex-direction: column;
-            align-items: end;
-            gap: 1rem;
-            z-index: 1;
-        }
-        .ul-nav.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .button-carrito {
-            .cantidad-carrito {
-                top: 15rem;
-                right: 3rem;
-            }
-        }
-    }
-
-    // Portada Index 517px
-
-    .portada-index {
-        gap: 0rem;
-        img {
-            width: 140px;
+            width: 145px;
             margin-top: -4rem;
-            margin-left: 1rem;
+            margin-left: 1.3rem;
         }
         .texto-portada {
             margin-top: 1rem;
             h1 {
-                font-size: 1.7rem;
+                font-size: 1.75rem;
                 font-weight: 600;
                 letter-spacing: 2px;
                 font-family: 'Poppins', sans-serif;
@@ -2853,7 +2187,7 @@
         }
     }
 
-    // Contenedor 1 - index 517px
+    // Contenedor 1 - index 600px
 
     .container-1 {
         min-height: 160px;
@@ -2895,20 +2229,18 @@
     }
 
 
-    // Página productos - 517px
+    // Página productos - 600px
 
-    .header-productos {
-        min-height: 180px;
-        .portada-productos {
-            h2 {
-                font-size: 1.5rem;
-                padding: 0rem 0.3rem 0rem 0.9rem;
-            }
-            img {
-                width: 35%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+    .portada-productos {
+        margin-top: -8rem;
+        h2 {
+            font-size: 1.8rem;
+            padding: 0rem 0.6rem;
+            margin-top: 2rem;
+        }
+        img {
+            width: 40%;
+            margin-right: 0.5rem;
         }
     }
 
@@ -2957,22 +2289,19 @@
         }
     }
 
-    // Página ubicación - 517px
+    // Página ubicación - 600px
 
-    .header-ubicacion {
-        min-height: 23vh;
-        .h2-header {
-            font-size: 1.77rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 20px;
-            font-weight: 600;
-            padding: 0.3rem;
-            span {
-                font-size: 1.7rem;
-            }
+    .h2-ubicacion {
+        font-size: 1.9rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+        font-weight: 600;
+        padding: 0.3rem;
+        span {
+            font-size: 1.7rem;
         }
-        
     }
+
     .contenedor-ubicacion {
         flex-direction: column;
         
@@ -2998,7 +2327,7 @@
         }
     }
 
-    // Página Contacto - 517px
+    // Página Contacto - 600px
 
     .contenedor-contacto {
         flex-direction: column;
@@ -3032,15 +2361,11 @@
 }
 
 
-// MEDIA QUERYS - 400px
+// MEDIA QUERYS - 414px
 
-@media screen and (min-width: 320px) and (max-width: 414px) {
+@media screen and (min-width: 320px) and (max-width: 414px) {  
 
-    .header-index {
-        min-height: 25vh;
-    }
-
-    // Nav - responsive - 400px
+    // Nav - responsive - 414px
 
     .menu {
         display: flex;
@@ -3115,20 +2440,22 @@
         }
     }
 
-    // Portada Index 400px
+    // Portada Index 414px
     .portada-index {
+        margin-top: 0rem;
         gap: 0rem;
         img {
-            width: 120px;
-            margin-top: -4rem;
+            width: 110px;
+            margin-top: -3.5rem;
             margin-left: 0.7rem;
+            padding: 0 0.2rem;
         }
         .texto-portada {
             margin-top: 0.65rem;
             h1 {
-                font-size: 1.25rem;
+                font-size: 1.4rem;
                 font-weight: 600;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 font-family: 'Poppins', sans-serif;
                 margin-bottom: 1px;
             }
@@ -3148,14 +2475,14 @@
         }
     }
 
-    // Contenedor 1 - index 400px
+    // Contenedor 1 - index 414px
 
     .container-1 {
         min-height: 150px;
         .texto-container1 {
             margin-left: 1rem;
             h2 {
-                font-size: 1.05rem;
+                font-size: 1.15rem;
             }
             span {
                 font-size: 1.2rem;
@@ -3190,23 +2517,19 @@
     }
 
 
-    // Página productos - 400px
-
-    .header-productos {
-        min-height: 130px;
-        .portada-productos {
-            h2 {
-                font-size: 1.3rem;
-                padding: 0.7rem;
-            }
-            img {
-                width: 35%;
-                margin-top: 20px;
-                margin-right: 0.5rem;
-            }
+    // Página productos - 414px
+    
+    .portada-productos {
+        h2 {
+            font-size: 1.4rem;
+            padding: 0 1.2rem;
+            margin-top: 3rem;
+        }
+        img {
+            width: 40%;
+            margin-right: 0.5rem;
         }
     }
-
     .container-product {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -3252,22 +2575,19 @@
         }
     }
 
-    // Página ubicación - 400px
+    // Página ubicación - 414px
 
-    .header-ubicacion {
-        min-height: 23vh;
-        .h2-header {
-            font-size: 1.7rem;
-            font-family: 'Poppins', sans-serif;
-            margin-top: 20px;
-            font-weight: 600;
-            padding: 0.3rem;
-            span {
-                font-size: 1.5rem;
-            }
+    .h2-ubicacion {
+        font-size: 1.6rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+        font-weight: 600;
+        padding: 0.3rem;
+        span {
+            font-size: 1.5rem;
         }
-        
     }
+
     .contenedor-ubicacion {
         flex-direction: column;
         
@@ -3293,7 +2613,7 @@
         }
     }
 
-    // Página Contacto - 400px
+    // Página Contacto - 414px
 
     .contenedor-contacto {
         flex-direction: column;
