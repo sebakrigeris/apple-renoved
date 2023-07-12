@@ -7,6 +7,7 @@ const verCarrito = () => {
     modalHeader.innerHTML = `
     <h1 class="modal-header-tittle">Carrito</h1>
     `; 
+    document.body.classList.add('modal-open');
 
     modalContainer.append(modalHeader);
 
@@ -16,6 +17,7 @@ const verCarrito = () => {
 
     modalButton.addEventListener("click", () =>{
         modalContainer.style.display = "none";
+        document.body.classList.remove('modal-open');
     });
 
     modalHeader.append(modalButton);
@@ -100,3 +102,6 @@ const eliminarProducto = () => {
     };
 
     carritoCounter();
+
+
+    

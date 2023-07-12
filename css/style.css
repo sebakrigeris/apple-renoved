@@ -8,6 +8,9 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
+body.modal-open {
+  overflow: hidden; }
+
 .body-index {
   width: 100%;
   min-height: 100vh;
@@ -1352,10 +1355,10 @@
         font-weight: 600;
         letter-spacing: 2px;
         font-family: 'Poppins', sans-serif;
-        margin-bottom: 1px; }
+        margin-bottom: 6px; }
       .portada-index .texto-portada p {
         font-size: 1.3rem;
-        margin-bottom: 13px;
+        margin-bottom: 10px;
         line-height: normal; }
       .portada-index .texto-portada span {
         font-size: 1.4rem; }
@@ -1528,10 +1531,10 @@
         font-weight: 600;
         letter-spacing: 1px;
         font-family: 'Poppins', sans-serif;
-        margin-bottom: 1px; }
+        margin-bottom: 4px; }
       .portada-index .texto-portada p {
         font-size: 1.2rem;
-        margin-bottom: 13px;
+        margin-bottom: 4px;
         line-height: normal; }
       .portada-index .texto-portada span {
         font-size: 1.3rem; }
